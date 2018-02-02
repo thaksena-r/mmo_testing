@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head -->
 <head>
 <title>Match Made In Oven</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,38 +7,27 @@
 <meta name="keywords" content="Match Made In Oven, MMO, Thaksena bake, matchmadeinoven, Scarborough, Thagsana Rangarajan, Cakes, Cupcakes, Tamil baker, Thuggy, 
 Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 
-<!-- Default-JavaScript-File -->
+<!-- JavaScript -->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-<!-- //Default-JavaScript-File -->
 
+<!-- Import Stylesheets -->
 <link rel="stylesheet" href="css/easy-responsive-tabs.css"><!-- easy responsive tabs css -->
 <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all"><!-- date-picker css-->
+<link href="css/lsb.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/style3.css" />
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
 
-<!-- gallery -->
-	<link href="css/lsb.css" rel="stylesheet" type="text/css">
-<!-- //gallery -->
+<!-- Default Stylesheets -->
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/font-awesome.min.css" />
 
-<!-- banner text effect css files -->
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/style3.css" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-<!-- banner text effect css files -->
+<!--Import Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Pacifico|Satisfy" rel="stylesheet">
 
-<!-- logo text effect css files -->
-	<link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
-<!-- //logo text effect css files -->
-	
-<!-- default css files -->
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-<!-- default css files -->
-	
-<!--web font-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Pacifico|Satisfy" rel="stylesheet">
-<!--//web font-->
-	
 <!-- scrolling script -->
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -49,46 +37,42 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 		});
 	});
 </script> 
-<!-- //scrolling script -->
 
 <!--//filter -->
-  <script>
-  $(document).ready(function(){
-    // clicking button with class "category-button"
-    $(".category-button").click(function(){
-        // get the data-filter value of the button
-        var filterValue = $(this).attr('data-filter');
-        
-        // show all items
-        if(filterValue == "all")
-        {
-            $(".all").show("slow");
-        }
-        else
-        {   
-            // hide all items
-            $(".all").not('.'+filterValue).hide("slow");
-            // and then, show only items with selected data-filter value
-            $(".all").filter('.'+filterValue).show("slow");
-        }
-    });
-
+<script>
+$(document).ready(function(){
+// clicking button with class "category-button"
+$(".category-button").click(function(){
+	// get the data-filter value of the button
+	var filterValue = $(this).attr('data-filter');
+	
+	// show all items
+	if(filterValue == "all")
+	{
+		$(".all").show("slow");
+	}
+	else
+	{   
+		// hide all items
+		$(".all").not('.'+filterValue).hide("slow");
+		// and then, show only items with selected data-filter value
+		$(".all").filter('.'+filterValue).show("slow");
+	}
 });
-  </script>
+});
+</script>
+
 </head>
-
-<!-- Body -->
 <body>
-
-<!-- banner -->
-	<div class="banner jarallax">
-		<div class="agileinfo-dot">
+<!-- banner, navbar -->
+	<div class="banner coverBanner">
+		<div class="dottedEffect">
 			<div class="header">
 				<div class="container-fluid">
 					<div class="top-nav">
 						<nav class="navbar navbar-default">
 								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navCollapsed">
 										<span class="sr-only">Toggle navigation</span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
@@ -96,7 +80,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 									</button>
 								</div>
 							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<div class="collapse navbar-collapse" id="navCollapsed">
 								<ul class="nav navbar-nav">
 									<li><a class="active" href="index.html">Home</a></li>
 									<li><a href="#about" class="scroll">About</a></li>
@@ -127,12 +111,14 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 					</p>
 					<a href="#">Contact Us</a>
 			</div>
+			<section id="section05" class="scrolling">
+			  <a href="#about"><span></span></a>
+			</section>
 		</div>
 	</div>
-<!-- //banner -->
-	
+<!-- banner, navbar -->
 
-<!-- modal -->
+<!-- Modal Banner -->
 	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -142,7 +128,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 						<h5>31 Jan 2018</h5>
 					</div> 
 					<div class="modal-body">
-					<div class="agileits-w3layouts-info">
+					<div class="info-modal">
 						<img src="images/cupcakebox.jpg" alt="" />
 						<p>Morbi eget mollis erat, sit amet feugiat nulla. In hac habitasse platea dictumst. Sed ac fermentum eros. Pellentesque tincidunt nisi sit amet dui lobortis, pulvinar pellentesque dui tempor. Sed iaculis, nisl a eleifend porttitor, diam mauris gravida arcu, suscipit ullamcorper nulla diam vitae lorem..</p>
 					</div>
@@ -150,11 +136,11 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 			</div>
 		</div>
 	</div>
-<!-- //modal -->
+<!-- Modal Banner -->
 	
-<!-- tabs -->	<!-- about -->
-<div class="demo" id="about">    
-	<div class="container"> 
+<!-- about -->
+<div class="demo" id="about">
+	<div class="container">
 		<div class="heading">
 			<h3>The Team</h3>
 		</div>
@@ -185,8 +171,8 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 		</div>
 	</div>
 </div>
+<!-- about -->
 
-<!-- Add sliding design, limit to 3 per page -->
 <!-- Menu Items -->
 <div class="menu" id="menu">
 <div class="container text-center">  
@@ -201,7 +187,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 	<hr>
 	
 	<div class="col-sm-4 all category1 well">
-	<img src="images/1_.png">
+	<img src="images/1.png">
       <h3><b>YOUR CUPCAKE</b></h3> 
 	  <a href="#" class="btn btn-xs btn-mmo" style="background-color:#efc97c; border-color:#efc97c">  Customize  </a>
 	  <br></br>
@@ -209,7 +195,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 	</div>
 	
 	<div class="col-sm-4 all category1 well">
-	<img src="images/1.png">
+	<img src="images/2.png">
       <h3><b>CHOCOLATE GANACHE</b></h3> 
 	  <a href="#" class="btn btn-xs btn-mmo">  Pricing  </a>
 	  <br></br>
@@ -217,7 +203,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 	</div>
 
 	<div class="col-sm-4 all category1 well">
-      <img src="images/2.png" >
+      <img src="images/3.png" >
       <h3><b>VANILLA GANACHE</b></h3> 
 	  <a href="#" class="btn btn-xs btn-mmo">  Pricing  </a>
 	  <br></br>
@@ -225,7 +211,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 	</div>
 
 	<div class="col-sm-4 all category1 well">
-      <img src="images/3.png"  alt="Image">
+      <img src="images/4.png"  alt="Image">
       <h3><b>BIRTHDAY CAKE (V)</b></h3> 
 	  <a href="#" class="btn btn-xs btn-mmo">  Pricing  </a>
 	  <br></br>
@@ -233,19 +219,11 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 	</div>
 
 	<div class="col-sm-4 all category1 well">
-      <img src="images/4.png"  alt="Image">
+      <img src="images/5.png"  alt="Image">
       <h3><b>BIRTHDAY CAKE (C)</b></h3> 
 	  <a href="#" class="btn btn-xs btn-mmo">  Pricing  </a>
 	  <br></br>
 	  <p style="text-align: center"><i>Classic red velvet cupcake with a vanilla cream cheese frosting.</i></p>  
-	</div>
-
-	<div class="col-sm-4 all category1 well">
-      <img src="images/5.png"  alt="Image">
-      <h3><b>RED VELVET</b></h3> 
-	  <a href="#" class="btn btn-xs btn-mmo">  Pricing  </a>
-	  <br></br>
-	  <p style="text-align: center"><i>Classic red velvet cupcake with a vanilla cream cheese frosting.</i></p>
 	</div>
 
 	<div class="col-sm-4 all category4 well">
@@ -296,42 +274,6 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 	  <p style="text-align: center"><i>Classic red velvet cupcake with a vanilla cream cheese frosting.</i></p> 
 	</div>
 
-	<div class="col-sm-4 all category1 well">
-      <img src="images/12.png" style="max-height: 160px;" alt="Image">
-      <h3><b>CHOCOLATE DREAM</b></h3> 
-	  <a href="#" class="btn btn-xs btn-mmo">  Pricing  </a>
-	  <br></br>
-	  <p style="text-align: center"><i>Classic red velvet cupcake with a vanilla cream cheese frosting.</i></p> 
-	</div>
-	
-
-	<div class="col-sm-4 all category1 well">
-      <img src="images/13.png" style="max-height: 160px;" alt="Image">
-      <h3><b>CLASSIC VANILLA</b></h3> 
-	  <a href="#" class="btn btn-xs btn-mmo">  Pricing  </a>
-	  <br></br>
-	  <p style="text-align: center"><i>Classic red velvet cupcake with a vanilla cream cheese frosting.</i></p> 
-	</div>
-	
-
-	<div class="col-sm-4 all category1 well">
-      <img src="images/14.png" style="max-height: 160px;" alt="Image">
-      <h3><b>CARROT CAKE</b></h3> 
-	  <a href="#" class="btn btn-xs btn-mmo">  Pricing  </a>
-	  <br></br>
-	  <p style="text-align: center"><i>Classic red velvet cupcake with a vanilla cream cheese frosting.</i></p> 
-	</div>
-	
-
-	<div class="col-sm-4 all category1 well">
-      <img src="images/15.png" style="max-height: 160px;" alt="Image">
-      <h3><b>STRAWBERRY BLISS</b></h3> 
-	  <a href="#" class="btn btn-xs btn-mmo">  Pricing  </a>
-	  <br></br>
-	  <p style="text-align: center"><i>Classic red velvet cupcake with a vanilla cream cheese frosting.</i></p> 
-	</div>
-	
-
 	<div class="col-sm-4 all category2 well">
       <img src="images/16.png" style="max-height: 160px;" alt="Image">
       <h3><b>CHOCOLATE CAKE</b></h3> 
@@ -341,10 +283,10 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 	</div>
 	</div>
 </div>
-<!-- /services -->
+<!-- Menu Items -->
 
 	
-<!-- gallery -->
+<!-- Instagram Feed -->
 	<div class="gallery" id="gallery">
 			<div class="gallery_head">
 			<h3>Food Gallery</h3>
@@ -355,7 +297,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 						<div class="news_grid">
 							<img src="images/p1.jpg" alt=" " class="img-responsive">
 							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Butter pizza</h3></div>
+								<div class="gallery_txt"><h3>Assorted Cupcakes</h3></div>
 							</div>
 						</div>
 					</a>
@@ -365,17 +307,17 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 						<div class="news_grid">
 							<img src="images/p2.jpg" alt=" " class="img-responsive">
 							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Pasta</h3></div>
+								<div class="gallery_txt"><h3>Assorted Cupcakes</h3></div>
 							</div>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-3 gallery_grid">
-					<a href="images/p13.jpg" class="lsb-preview" data-lsb-group="header">
+					<a href="images/p3.jpg" class="lsb-preview" data-lsb-group="header">
 						<div class="news_grid">
-							<img src="images/p13.jpg" alt=" " class="img-responsive">
+							<img src="images/p3.jpg" alt=" " class="img-responsive">
 							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Lemon cheese</h3></div>
+								<div class="gallery_txt"><h3>Coffee Macarons</h3></div>
 							</div>
 						</div>
 					</a>
@@ -385,17 +327,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 						<div class="news_grid">
 							<img src="images/p4.jpg" alt=" " class="img-responsive">
 							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Toasted puff</h3></div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 gallery_grid">
-					<a href="images/p6.jpg" class="lsb-preview" data-lsb-group="header">
-						<div class="news_grid">
-							<img src="images/p6.jpg" alt=" " class="img-responsive">
-							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Burger Cheese</h3></div>
+								<div class="gallery_txt"><h3>Strawberry Shortcake</h3></div>
 							</div>
 						</div>
 					</a>
@@ -405,7 +337,17 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 						<div class="news_grid">
 							<img src="images/p5.jpg" alt=" " class="img-responsive">
 							<div class="grid_pos">
-								<div class="gallery_txt"><h3>fried broccoli</h3></div>
+								<div class="gallery_txt"><h3>Banana Bread</h3></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 gallery_grid">
+					<a href="images/p6.jpg" class="lsb-preview" data-lsb-group="header">
+						<div class="news_grid">
+							<img src="images/p6.jpg" alt=" " class="img-responsive">
+							<div class="grid_pos">
+								<div class="gallery_txt"><h3>Dark Chocolate Cupcakes</h3></div>
 							</div>
 						</div>
 					</a>
@@ -415,7 +357,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 						<div class="news_grid">
 							<img src="images/p7.jpg" alt=" " class="img-responsive">
 							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Apple almond salad</h3></div>
+								<div class="gallery_txt"><h3>Chocolate Macarons</h3></div>
 							</div>
 						</div>
 					</a>
@@ -425,47 +367,7 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 						<div class="news_grid">
 							<img src="images/p8.jpg" alt=" " class="img-responsive">
 							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Roasted meat</h3></div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 gallery_grid">
-					<a href="images/p9.jpg" class="lsb-preview" data-lsb-group="header">
-						<div class="news_grid">
-							<img src="images/p9.jpg" alt=" " class="img-responsive">
-							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Pasta rolls</h3></div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 gallery_grid">
-					<a href="images/p10.jpg" class="lsb-preview" data-lsb-group="header">
-						<div class="news_grid">
-							<img src="images/p10.jpg" alt=" " class="img-responsive">
-							<div class="grid_pos">
-								<div class="gallery_txt"><h3>fruits</h3></div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 gallery_grid">
-					<a href="images/p11.jpg" class="lsb-preview" data-lsb-group="header">
-						<div class="news_grid">
-							<img src="images/p11.jpg" alt=" " class="img-responsive">
-							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Meat Pizza</h3></div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 gallery_grid">
-					<a href="images/p12.jpg" class="lsb-preview" data-lsb-group="header">
-						<div class="news_grid">
-							<img src="images/p12.jpg" alt=" " class="img-responsive">
-							<div class="grid_pos">
-								<div class="gallery_txt"><h3>Boiled eggs</h3></div>
+								<div class="gallery_txt"><h3>Red Velvet Cupcakes</h3></div>
 							</div>
 						</div>
 					</a>
@@ -473,8 +375,8 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 				<div class="clearfix"> </div>
 			</div>
 </div>
+<!-- Instagram Feed -->
 
-<!-- //gallery -->
 <!-- gallery js -->
 	<script src="js/lsb.min.js"></script>
 	<script>
@@ -511,7 +413,6 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 	</script>
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
-	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/*
@@ -527,14 +428,18 @@ Thaksena Rangarajan, Jonathan Rajasingam, Syed Nabi, MMO Thaksena" />
 								
 			});
 	</script>
-<!-- //here ends scrolling icon -->
+	<script type="text/javascript">
+	$(function() {
+	  $('a[href*=#]').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	  });
+	});
+	</script>
 
 <!-- banner text effect js file -->
 		<script src="js/modernizr.custom.72111.js"></script>
 <!-- banner text effect js file -->
 
-
-
 </body>
-<!-- //Body -->
 </html>
